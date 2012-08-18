@@ -10,10 +10,23 @@ leader board for everyone to compete with.
 To start off with we will be using the code for "paddle ball with simple score"
 found on KhanAcademy.com and use Processing.js to create the game.
 
-Milestones
--------
+Milestones - Base Camp 1 (By August 19th, 2012)
+-----------------------------------------------
 
 * First of all, we need to get the KhanAcademy paddle ball version working
 * Attach the scoring system to a server, record a name with a scores to a DB
 * Display a LeaderBoard
-* Modify
+* Modify PaddleBall to display breakable bricks of a single type
+* Create a new level when all the bricks are destroyed
+** Store score when a level is complete (separate table in DB)
+
+// If we get this all done by the end of the weekend I (Florian) will be
+// Thoroughly impressed.
+
+
+Long Term Features
+-----------------------------------------------
+* Multiple Brick Types
+* Random placement of different brick types dependent on value by level
+* Drops that give special powers to the player
+* Awesome visual effects
