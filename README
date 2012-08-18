@@ -1,0 +1,19 @@
+BreakOut Arcade!
+=============
+
+Anthony (Cosah) and I are determined to spend the weekend creating an epic
+version of the game BreakOut.
+
+This will be Arcade style so the game will be hosted online and have a
+leader board for everyone to compete with.
+
+To start off with we will be using the code for "paddle ball with simple score"
+found on KhanAcademy.com and use Processing.js to create the game.
+
+Milestones
+-------
+
+* First of all, we need to get the KhanAcademy paddle ball version working
+* Attach the scoring system to a server, record a name with a scores to a DB
+* Display a LeaderBoard
+* Modify
