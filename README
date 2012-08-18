@@ -1,6 +1,5 @@
 BreakOut Arcade!
-=============
-
+================
 Anthony (Cosah) and I are determined to spend the weekend creating an epic
 version of the game BreakOut.
 
@@ -26,7 +25,13 @@ Milestones - Base Camp 1 (By August 19th, 2012)
 
 Long Term Features
 -----------------------------------------------
-* Multiple Brick Types
+* Change the paddle to a bumper, clicking the bumper when the ball
+    hits it will increase the speed of the ball. Therefore, add some air drag
+    to the ball.
+
+* Multiple Brick Types. Give bricks health, harder you hit the brick
+    the more damage the brick takes.
+
 * Random placement of different brick types dependent on value by level
 * Drops that give special powers to the player
 * Awesome visual effects
