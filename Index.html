@@ -3,24 +3,28 @@
 <html>
 <head>
     <title>Rebound</title>
-    <link rel="stylesheet" href="breakout.css" type="text/css" />
-    <script type="text/javascript" src="breakout.js"></script>
+    <link rel="stylesheet" href="./breakout.css" type="text/css" />
+    <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+    <script type="text/javascript" src="./breakout.js"></script>
 </head>
 
 <body onLoad="init()">
     <h1>Break Out by Florian Mettetal</h1>
     <div id="playingArea">
         <div id="paddle">
-            <img src="img/paddle.gif" alt ="">
+            <img src="" alt ="">
         </div>
         <div id="ball">
-            <img src="img/ball.gif" alt ="">
+            <img src="./img/ball.gif" alt ="">
         </div>
         <div id="score">
             Score: 0
         </div>
     </div>
-    <div style="position: relative; top: 600px;">
+    <div id="goButton" onClick="init();">
+          <p>Again!</p>
+    </div>
+    <div style="position: absolute; top: 650px;">
         <p>Controls:</p>
         <ul>
             <li>Mouse left or right to control the paddle</li>

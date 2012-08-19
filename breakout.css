@@ -8,11 +8,9 @@
     background-color: rgb(192,192,192);
 }
 #paddle{
-    position: absolute;
-    top: 470px;
+    position: relative;
     left: 228px;
-    width: 64px;
-    height: 16px;
+    z-index: 1000;
 }
 #ball{
     position: absolute;
@@ -30,4 +28,27 @@
     font-size: 10pt;
     color: white;
     background-color: rgb(32,128,64);
+}
+#goButton{
+    text-align: center;
+    line-height: 33px;
+    font-size: 20px;
+}
+.goActive{
+    position: relative;
+    top: 550px;
+    left: 315px;
+    width: 60px;
+    height: 35px;
+    background-color: #228b22;
+    border-radius: 5px;
+    color: #f8f8ff;
+    cursor: pointer;
+}
+.goInactive{
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    left: -500px;
+    overflow: hidden;
 }
