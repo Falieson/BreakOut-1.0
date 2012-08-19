@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="58d48ce6-9e9e-4c62-8166-80cc5c769e10" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Index.html" afterPath="$PROJECT_DIR$/Index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/breakout.css" afterPath="$PROJECT_DIR$/breakout.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/breakout.js" afterPath="$PROJECT_DIR$/breakout.js" />
     </list>
     <ignored path="BreakOut-Arcade.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,25 +19,6 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
-  <component name="DockManager">
-    <window id="2">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="breakout.css" pinned="false" current="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/breakout.css">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state line="12" column="17" selection-start="246" selection-end="246" vertical-scroll-proportion="0.2393617">
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
@@ -55,10 +33,19 @@
       <file leaf-file-name="breakout.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/breakout.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="47" selection-start="2082" selection-end="2082" vertical-scroll-proportion="1.7253045">
+            <state line="88" column="60" selection-start="2171" selection-end="2171" vertical-scroll-proportion="0.35588634">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="breakout.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/breakout.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="22" selection-start="616" selection-end="616" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -290,7 +277,11 @@
       <created>1345353318284</created>
       <updated>1345353318284</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Created a start/restart button, changed score to be based on bumps, started working on the slapper.">
+      <created>1345361553213</created>
+      <updated>1345361553213</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <option name="createChangelist" value="false" />
     <servers />
   </component>
@@ -353,7 +344,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated breakout.js and index.html (fixed errors)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created a start/restart button, changed score to be based on bumps, started working on the slapper." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -375,6 +366,7 @@
     <MESSAGE value="Updating" />
     <MESSAGE value="Moved css to its own file, refactored mouseListener()" />
     <MESSAGE value="updated breakout.js and index.html (fixed errors)" />
+    <MESSAGE value="Created a start/restart button, changed score to be based on bumps, started working on the slapper." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -455,14 +447,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/breakout.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="17" selection-start="246" selection-end="246" vertical-scroll-proportion="0.2393617">
+        <state line="36" column="22" selection-start="616" selection-end="616" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/breakout.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="47" selection-start="2082" selection-end="2082" vertical-scroll-proportion="1.7253045">
+        <state line="88" column="60" selection-start="2171" selection-end="2171" vertical-scroll-proportion="0.35588634">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
