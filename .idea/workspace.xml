@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58d48ce6-9e9e-4c62-8166-80cc5c769e10" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index-p5.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/paddle.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/paddle.pde" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/processing-1.4.1.min.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BreakOut-Arcade.iws" />
@@ -25,30 +21,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="22" selection-start="480" selection-end="480" vertical-scroll-proportion="-8.75">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="breakout.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/breakout.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="41" selection-start="2171" selection-end="2171" vertical-scroll-proportion="0.35588634">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="breakout.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/breakout.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="22" selection-start="616" selection-end="616" vertical-scroll-proportion="0.0">
+            <state line="14" column="50" selection-start="626" selection-end="626" vertical-scroll-proportion="0.2841678">
               <folding />
             </state>
           </provider>
@@ -65,7 +41,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Working-PaddleBall" />
       </map>
     </option>
   </component>
@@ -289,7 +265,15 @@
       <created>1345362831803</created>
       <updated>1345362831803</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Removed the Processing.js related files">
+      <created>1345363060299</created>
+      <updated>1345363060299</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Updating breakout.js's commenting section to discuss what is unfinished in the current task">
+      <created>1345363820806</created>
+      <updated>1345363820807</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <option name="createChangelist" value="false" />
     <servers />
   </component>
@@ -352,7 +336,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on the slapper" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating breakout.js's commenting section to discuss what is unfinished in the current task" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -376,6 +360,8 @@
     <MESSAGE value="updated breakout.js and index.html (fixed errors)" />
     <MESSAGE value="Created a start/restart button, changed score to be based on bumps, started working on the slapper." />
     <MESSAGE value="working on the slapper" />
+    <MESSAGE value="Removed the Processing.js related files" />
+    <MESSAGE value="Updating breakout.js's commenting section to discuss what is unfinished in the current task" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -430,26 +416,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="22" selection-start="480" selection-end="480" vertical-scroll-proportion="-8.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/breakout.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="22" selection-start="616" selection-end="616" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/breakout.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="41" selection-start="2171" selection-end="2171" vertical-scroll-proportion="0.35588634">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state line="14" column="50" selection-start="626" selection-end="626" vertical-scroll-proportion="0.2841678">
+          <folding />
         </state>
       </provider>
     </entry>
