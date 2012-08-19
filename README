@@ -35,3 +35,11 @@ Long Term Features
 * Random placement of different brick types dependent on value by level
 * Drops that give special powers to the player
 * Awesome visual effects
+
+
+Log
+====
+20120819 - I got paddle ball working in Processing.js but the folks in
+            ##javascript irc suggested that I build completely in JS rather
+            than using a foreign processor. I've moved all the processing
+            stuff to index-p5.html
