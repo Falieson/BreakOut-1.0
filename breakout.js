@@ -16,6 +16,18 @@
 // -> increases speed/power of the ball
 //////////////////////////////////////////////////////////////////////////////////
 
+//**     Unfinished task that is currently being worked on     **\\
+//
+// Right now I'm working on the slapper function
+// 1. I broke the currentScore var, it no longer is being reset to 0
+// 2. The slapper does not raise by slapY when slap() is activated onCLick()
+// 3A. once that's fixed create var slapV = 6
+// 3B. create if (slap && collision) ballDx = ballDy += slapV
+//
+//**  Make sure to update this! Last Updated: 20120819 01:06PST  **\\
+
+
+
 //get info, process data, update screen objects
 //instance vars
 var ball;
