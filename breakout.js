@@ -54,16 +54,13 @@ function mouseListener(event){
     var x = event.clientX;
     console.log(playingArea.style);
     paddleLeft = x - 100;
-    paddle.style.left = paddleLeft + 'px';
     if (paddleLeft <= 0){
         paddleLeft = 0;
-        paddle.style.left = paddleLeft + 'px';
     }
     if (paddleLeft >= boardW -paddleW){
         paddleLeft = boardW - paddleW;
-        paddle.style.left = paddleLeft + 'px';
     }
-
+   paddle.style.left = paddleLeft + 'px';
 }
 
 function start(){
