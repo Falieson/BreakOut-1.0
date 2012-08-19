@@ -33,8 +33,15 @@ Long Term Features
     the more damage the brick takes.
 
 * Random placement of different brick types dependent on value by level
+
 * Drops that give special powers to the player
-* Awesome visual effects
+
+* Awesome visual effects (such as the ball flaming the more power it has)
+    three.js is a library that helps with making pretty animations.
+
+* The ball gains power by collecting mass and speed. Speed is increased by
+    the ball being "slapped" by the paddle. The ball gains mass by collecting
+    certain drops from destroying bricks.
 
 
 Log

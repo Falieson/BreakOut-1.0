@@ -14,6 +14,8 @@
 // -> Turn the paddle into a slapper
 // -> Makes the paddle jump when you click
 // -> increases speed/power of the ball
+// * Create highscore board, "nickname" saved remotely, leaderboard
+// *
 //////////////////////////////////////////////////////////////////////////////////
 
 //**     Unfinished task that is currently being worked on     **\\
