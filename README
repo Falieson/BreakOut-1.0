@@ -39,7 +39,9 @@ Long Term Features
 
 Log
 ====
-20120819 - I got paddle ball working in Processing.js but the folks in
+20120818 - I got paddle ball working in Processing.js but the folks in
             ##javascript irc suggested that I build completely in JS rather
             than using a foreign processor. I've moved all the processing
             stuff to index-p5.html
+
+20120818 - Got paddle ball working in javascript
