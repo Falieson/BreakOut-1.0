@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58d48ce6-9e9e-4c62-8166-80cc5c769e10" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/index-p5.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/paddle.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/paddle.pde" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/processing-1.4.1.min.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BreakOut-Arcade.iws" />
@@ -33,7 +37,7 @@
       <file leaf-file-name="breakout.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/breakout.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="60" selection-start="2171" selection-end="2171" vertical-scroll-proportion="0.35588634">
+            <state line="88" column="41" selection-start="2171" selection-end="2171" vertical-scroll-proportion="0.35588634">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -281,7 +285,11 @@
       <created>1345361553213</created>
       <updated>1345361553213</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="working on the slapper">
+      <created>1345362831803</created>
+      <updated>1345362831803</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <option name="createChangelist" value="false" />
     <servers />
   </component>
@@ -292,9 +300,10 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991013" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991013" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2252142" sideWeight="0.67008984" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2252142" sideWeight="0.67008984" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -303,7 +312,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -344,7 +352,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created a start/restart button, changed score to be based on bumps, started working on the slapper." />
+    <option name="LAST_COMMIT_MESSAGE" value="working on the slapper" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -367,6 +375,7 @@
     <MESSAGE value="Moved css to its own file, refactored mouseListener()" />
     <MESSAGE value="updated breakout.js and index.html (fixed errors)" />
     <MESSAGE value="Created a start/restart button, changed score to be based on bumps, started working on the slapper." />
+    <MESSAGE value="working on the slapper" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -400,11 +409,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/processing-1.4.1.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="51" selection-start="0" selection-end="231856" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="57" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0">
@@ -419,21 +423,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/processing-1.4.1.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="57" selection-start="0" selection-end="231856" vertical-scroll-proportion="0.2638701" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="8" selection-start="263" selection-end="263" vertical-scroll-proportion="0.15558511">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index-p5.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="218" selection-end="388" vertical-scroll-proportion="0.16483517">
           <folding />
         </state>
       </provider>
@@ -454,7 +446,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/breakout.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="60" selection-start="2171" selection-end="2171" vertical-scroll-proportion="0.35588634">
+        <state line="88" column="41" selection-start="2171" selection-end="2171" vertical-scroll-proportion="0.35588634">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
