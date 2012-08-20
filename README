@@ -52,3 +52,7 @@ Log
             stuff to index-p5.html
 
 20120818 - Got paddle ball working in javascript
+20120819 - Got the slapper to work, replaced setTimeout with rAF
+            more importantly I found a better tutorial we should have been
+            using as the original codebase: (damn!)
+            http://billmill.org/static/canvastutorial/finish.html

@@ -2,7 +2,8 @@
 // Original Paddle Ball source comes from
 // http://www.devx.com/webdev/10MinuteSolution/27134/1954
 // Forked by FlorianMettetal
-// Creation Date: 2012 August, 18
+// Created On: 2012 August, 18
+// Last Modified: 2012 August, 19 by FlorianMettetal
 //
 // Game can be found at: ./index.html
 //
@@ -11,23 +12,34 @@
 // 1. Remove the difficulty attribute
 // 2. Add mouse control, remove keyboard, make sure the paddle stops at the wall
 // 3. Create start/restart button, changes score area as well
-// -> Turn the paddle into a slapper
-// -> Makes the paddle jump when you click
-// -> increases speed/power of the ball
+// 4. replaced timer = setTimeout() with more efficient/modern requestAnimFrame
+// 5. Turn the paddle into a slapper
+
 // * Create highscore board, "nickname" saved remotely, leaderboard
-// *
+// * Create destroyable blocks
 //////////////////////////////////////////////////////////////////////////////////
 
 //**     Unfinished task that is currently being worked on     **\\
 //
 // Right now I'm working on the slapper function
 // 1. I broke the currentScore var, it no longer is being reset to 0
-// 2. The slapper does not raise by slapY when slap() is activated onCLick()
 // 3A. once that's fixed create var slapV = 6
 // 3B. create if (slap && collision) ballDx = ballDy += slapV
 //
 //**  Make sure to update this! Last Updated: 20120819 01:06PST  **\\
 
+
+// implement rFA http://paulirish.com/2011/requestanimationframe-for-smart-animating/
+window.requestAnimFrame = (function(){
+    return  window.requestAnimationFrame       ||
+        window.webkitRequestAnimationFrame ||
+        window.mozRequestAnimationFrame    ||
+        window.oRequestAnimationFrame      ||
+        window.msRequestAnimationFrame     ||
+        function(callback){
+            window.setTimeout(callback, 1000 / 60);
+        };
+})();
 
 
 //get info, process data, update screen objects
@@ -36,10 +48,9 @@ var ball;
 var paddle;
 var score;
 //initial speeds
-var ballDx = 6;
-var ballDy = 6;
+var ballDx = 1;
+var ballDy = 1;
 var currentScore = 0;
-var timer;
 
 // Ball Position and Dimensions
 var ballY = 4;
@@ -47,6 +58,7 @@ var ballX = 200;
 //var ballRad = 15px;
 
 //Paddle Position and Dimensions
+
 var paddleY = 470;
 var paddleX = 228;
 var paddleW = 64;
@@ -64,7 +76,6 @@ window.addEventListener("load", init, false);
 
 function mouseListener(event){
     var x = event.clientX;
-    console.log(playingArea.style);
     paddleX = x - 100;
     if (paddleX <= 0){
         paddleX = 0;
@@ -100,23 +111,26 @@ function init(){
     paddle = document.getElementById('paddle');
 
     score = document.getElementById('score');
+
     document.onmousemove = mouseListener;
-    document.onclick = slap;
+
+    //document.onmousedown = slap; //replaced with:
+    playingArea.addEventListener('mousedown',slap,false);
+
     //start the game loop
-    start();
+    requestAnimFrame(start);
 }
 
 function start(){
     //game loop
     detectCollisions();
     render();
-    //difficulty(); disabling this function for now
     $('#goButton').removeClass('goActive');
     $('#goButton').addClass('goInactive');
     //end conditions
     if(ballY <= (paddleY) ){
         //still in play - keep the loop going
-        timer = setTimeout('start()',50);
+        requestAnimFrame(start);
     }
     else{
         gameOver();
@@ -147,6 +161,7 @@ function collisionY(){
     if(ballY > (paddleY-paddleH)){
         if(ballX > paddleX && ballX < paddleX + 64){
             updateScore();
+            console.log(paddleY);
             return true;
         }
     }
@@ -158,20 +173,22 @@ function render(){
 }
 
 function createPaddle(){
-    $('#paddle').css("width",paddleW);
-    $('#paddle').css("height",paddleH);
-    $('#paddle').css("top",paddleY);
-
-    $('#paddle').css("background-color","darkblue");
+    var $paddle = $('#paddle');
+    $paddle.css({width: paddleW, height: paddleH, top: paddleY})
+    $paddle.css("background-color","darkblue");
 }
 
 function slap(){
-    paddleY += slapY;
-    $('#paddle').css("top",paddleY);
-    $('#paddle').css("background-color","lightblue");
-
+    var $paddle = $('#paddle');
     paddleY -= slapY;
-    createPaddle();
+
+    $paddle.css({top: paddleY, width: paddleW});
+    $paddle.css("background-color","lightblue");
+
+    setTimeout(function(){
+        paddleY += slapY;
+        createPaddle();
+    }, 200);
 }
 
 function moveBall(){
@@ -187,8 +204,6 @@ function updateScore(){
 }
 
 function gameOver(){
-    //end the game by clearing the timer, modifying the score label
-    clearTimeout(timer);
     $('#score').append('<span id="tko">   Game Over</span>');
     //score.style.backgroundColor = 'rgb(128,0,0)';
     $('#score').css("background-color","rgb(128,0,0)");
@@ -196,15 +211,3 @@ function gameOver(){
     $('#goButton').removeClass('goInactive');
     $('#goButton').addClass('goActive');
 }
-
-/* disabled this function for now
- function difficulty(){
- //as the game progresses, increase magnitude of the vertical speed
- if(currentScore % 1000 == 0){
- if(ballDy > 0)
- ballDy += 1;
- else
- ballDy -= 1;
- }
- }
- */
