@@ -1,51 +1,22 @@
-BreakOut Arcade!
+BreakOut 1.0
 ================
-Anthony (Cosah) and I are determined to spend the weekend creating an epic
-version of the game BreakOut.
+Turning Paddle Ball game into BreakOut
+// Base: http://www.devx.com/webdev/10MinuteSolution/27134/1954
+// Forked by Florian Mettetal
+// Created on August 18, 2012
+// Modified on August 19, 2012
 
-This will be Arcade style so the game will be hosted online and have a
-leader board for everyone to compete with.
+List of Modifications:
+1. Remove the difficulty function
+2. Add mouse control, remove keyboard, make sure the paddle stops at the wall
+3. Create start/restart button, changes score area coloring as well
+4. Replaced timer = setTimeout() with more efficient/modern requestAnimFrame
+5. Turn the paddle into a slapper 
 
-To start off with we will be using the code for "paddle ball with simple score"
-found on KhanAcademy.com and use Processing.js to create the game.
-
-Milestones - Base Camp 1 (By August 19th, 2012)
------------------------------------------------
-
-* First of all, we need to get the KhanAcademy paddle ball version working
-* Attach the scoring system to a server, record a name with a scores to a DB
-* Display a LeaderBoard
-* Modify PaddleBall to display breakable bricks of a single type
-* Create a new level when all the bricks are destroyed
-** Store score when a level is complete (separate table in DB)
-
-// If we get this all done by the end of the weekend I (Florian) will be
-// Thoroughly impressed.
-
-
-Long Term Features
------------------------------------------------
-* Change the paddle to a bumper, clicking the bumper when the ball
-    hits it will increase the speed of the ball. Therefore, add some air drag
-    to the ball.
-
-* Multiple Brick Types. Give bricks health, harder you hit the brick
-    the more damage the brick takes.
-
-* Random placement of different brick types dependent on value by level
-
-* Drops that give special powers to the player
-
-* Awesome visual effects (such as the ball flaming the more power it has)
-    three.js is a library that helps with making pretty animations.
-
-* The ball gains power by collecting mass and speed. Speed is increased by
-    the ball being "slapped" by the paddle. The ball gains mass by collecting
-    certain drops from destroying bricks.
 
 
 Log
-====
+================
 20120818 - I got paddle ball working in Processing.js but the folks in
             ##javascript irc suggested that I build completely in JS rather
             than using a foreign processor. I've moved all the processing
